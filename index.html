@@ -5,26 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caravan</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="container-fluid fixed-top box-shadow">
-      <nav class="navbar navbar-expand-md bg-body-tertiary py-3">
+    <header class="container-fluid">
+      <nav
+        class="navbar fixed-top navbar-expand-md bg-body-tertiary p-3 box-shadow"
+      >
         <a class="navbar-brand" href="#">
-          <img src="img/caravan.svg" alt="">
+          <img src="img/caravan.svg" alt="" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Locais</a
+              >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="local.html">California</a></li>
+                <li>
+                  <a class="dropdown-item" href="local.html">California</a>
+                </li>
                 <li><a class="dropdown-item" href="local.html">Paris</a></li>
                 <li><a class="dropdown-item" href="local.html">Dublin</a></li>
-    
               </ul>
             </li>
             <li class="nav-item">
@@ -37,12 +55,45 @@
               <a class="nav-link" href="#">Login</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-outline-primary ms-md-2" href="inscricao.html">Inscreva-se</a>
+              <a class="btn btn-outline-primary ms-md-2" href="inscricao.html"
+                >Inscreva-se</a
+              >
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
+    <section class="container-fluid">
+      <div class="row bg-dark text-white">
+        <div class="col-md-7"></div>
+        <div class="col-lg-5 p-4">
+          <h1 class="display-4">Realize a viagem do seu sonho</h1>
+          <p class="lead">
+            O melhor local para viajar é com a Caravan, mais de 5.000 excursões
+            concluídas
+          </p>
+          <form action="">
+            <div class="input-group input-group-lg mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="E-mail"
+                aria-label="E-mail"
+                aria-describedby="inscrever-button"
+              />
+              <button
+                class="btn btn-primary"
+                type="button"
+                id="inscrever-button"
+              >
+                Inscreva-se
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
